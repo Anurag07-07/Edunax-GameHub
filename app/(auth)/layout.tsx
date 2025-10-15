@@ -6,8 +6,7 @@ const Auth = ({children}:{
 }) => {
   return (
     <div className=' h-full flex items-center justify-center flex-col'>
-      <Logo>
-      </Logo>
+      <Logo></Logo>
         {children}
     </div>
   )
