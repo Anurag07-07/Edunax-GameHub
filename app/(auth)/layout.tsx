@@ -5,7 +5,7 @@ const Auth = ({children}:{
   children:ReactNode
 }) => {
   return (
-    <div className=' h-full flex items-center justify-center flex-col'>
+    <div className=' h-full flex items-center justify-center flex-col gap-y-3'>
       <Logo></Logo>
         {children}
     </div>

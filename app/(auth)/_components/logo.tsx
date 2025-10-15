@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google";
 import Image from "next/image";
-
+import { cn } from "@/lib/utils";
 
 const font = Poppins({
   subsets:["latin"],
@@ -8,10 +8,13 @@ const font = Poppins({
 })
 
 export const Logo = ()=>{
-  return <div className=" flex flex-col items-center gap-y-4">
-    <div className="rounded-full p-1 flex justify-center gap-y-2 items-center flex-col">
+  return <div className=" flex flex-col items-center">
+    <div className="rounded-full p-1 flex justify-center items-center flex-col">
       <Image src='/game-svgrepo-com.svg' alt="Logo" width={80} height={80}></Image>
-      <div className=" text-3xl font-semibold ">EDUNAX GAMEHUB</div>
+    </div>
+    <div className=" flex flex-col items-center">
+      <p className={cn("text-xl font-semibold",font.className)}>EDUNAX GAMEHUB</p>
+      <p className={cn("text-sm text-muted-foreground",font.className)}>Let&apos;s play</p>
     </div>
   </div>
 }
