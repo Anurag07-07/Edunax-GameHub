@@ -8,9 +8,9 @@ const font = Poppins({
 })
 
 export const Logo = ()=>{
-  return <div className=" flex flex-col items-center">
-    <div className="rounded-full p-1 flex justify-center items-center flex-col">
-      <Image src='/game-svgrepo-com.svg' alt="Logo" width={80} height={80}></Image>
+  return <div className=" flex flex-col items-center gap-y-4">
+    <div className="rounded-full p-1 flex justify-center items-center flex-col bg-white">
+      <Image src='/alien-svgrepo-com.svg' alt="Logo" width={80} height={80}></Image>
     </div>
     <div className=" flex flex-col items-center">
       <p className={cn("text-xl font-semibold",font.className)}>EDUNAX GAMEHUB</p>
